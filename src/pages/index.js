@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Header from "@/components/Header";
 
 export default function Home() {
   const [prompt, setPrompt] = useState("");
@@ -28,9 +29,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <header className="bg-gray-800 text-white py-4 px-8">
-        <h1 className="text-3xl font-bold">AI Logo Generator</h1>
-      </header>
+      <Header/>
 
       {/* Main content */}
       <div className="flex-grow container mx-auto px-4 py-8">
@@ -73,7 +72,7 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white py-4 px-8">
+      <footer className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white py-4 px-8">
         <p className="text-center">&copy; 2024 Halil ibrahim Kamaci</p>
       </footer>
     </div>
