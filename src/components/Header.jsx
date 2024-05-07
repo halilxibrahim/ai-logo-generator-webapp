@@ -7,7 +7,7 @@ const Header = () => {
         <h1 className="text-4xl font-bold">LogoAI</h1>
         <nav>
           <ul className="flex space-x-6">
-            <li className="text-lg font-medium"><a href="https://bento.me/halilibrahim">İletişim</a></li>
+            <li className="text-lg font-medium"><a href="https://bento.me/halilibrahim">Contact</a></li>
           </ul>
         </nav>
       </div>
