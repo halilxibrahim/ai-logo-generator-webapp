@@ -27,52 +27,45 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="bg-gradient-to-r from-red-300 to-blue-300 flex flex-col min-h-screen">
       {/* Header */}
       <Header/>
 
       {/* Main content */}
-      <div className="flex-grow container mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row">
-          {/* Sidebar */}
-          <aside className="md:w-1/4 md:mr-4">
-            {/* Sidebar content can be added here */}
-          </aside>
-
-          {/* Logo generator */}
-          <div className="md:w-3/4">
-            <input
-              type="text"
-              placeholder="Enter your logo text..."
-              className="text-black border p-2 rounded w-full mb-4"
-              value={prompt}
-              onChange={(e) => setPrompt(e.target.value)}
-            />
-            <button
-              onClick={generateLogos}
-              className="bg-blue-600 text-white px-4 py-2 rounded"
-              disabled={loading}
-            >
-              {loading ? "Generating..." : "Generate Logos"}
-            </button>
-            {logos.length > 0 && (
-              <div className="mt-4 grid grid-cols-2 gap-4">
-                {logos.map((logo, index) => (
-                  <img
-                    key={index}
-                    src={logo}
-                    alt={`Logo ${index + 1}`}
-                    className="w-48 h-auto mx-2 my-4"
-                  />
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
+      <div className="flex-grow container mx-auto px-9 py-8 flex justify-center">
+  <div className="md:w-3/4">
+    <input
+      type="text"
+      placeholder="Enter your logo text..."
+      className="text-black border p-2 rounded w-full mb-4"
+      value={prompt}
+      onChange={(e) => setPrompt(e.target.value)}
+    />
+    <button
+      onClick={generateLogos}
+      className="bg-blue-600 text-white px-2 py-2 rounded mx-auto" 
+      disabled={loading}
+    >
+      {loading ? "Generating..." : "Generate Logos"}
+    </button>
+    {logos.length > 0 && (
+      <div className="mt-4 grid grid-cols-2 gap-4">
+        {logos.map((logo, index) => (
+          <img
+            key={index}
+            src={logo}
+            alt={`Logo ${index + 1}`}
+            className="w-48 h-auto mx-2 my-4"
+          />
+        ))}
       </div>
+    )}
+  </div>
+</div>
+
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white py-4 px-8">
+      <footer className="bg-gradient-to-r from-cyan-500 to-blue-800 text-white py-4 px-8">
         <p className="text-center">&copy; 2024 Halil ibrahim Kamaci</p>
       </footer>
     </div>
