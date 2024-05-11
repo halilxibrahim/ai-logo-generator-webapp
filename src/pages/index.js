@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Header from "@/components/Header";
-import Image from 'next/image'
 
 export default function Home() {
   const [prompt, setPrompt] = useState("");
@@ -52,7 +51,7 @@ export default function Home() {
     {logos.length > 0 && (
       <div className="mt-4 grid grid-cols-2 gap-4">
         {logos.map((logo, index) => (
-          <Image
+          <img
             key={index}
             src={logo}
             alt={`Logo ${index + 1}`}
