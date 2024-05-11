@@ -1,3 +1,7 @@
+## AI LOGO GENERATOR WEB APP 
+<img width="1470" alt="Ekran Resmi 2024-05-11 12 49 05" src="https://github.com/halilxibrahim/ai-logo-generator-webapp/assets/54751699/2541182d-daa8-4995-a134-36b963998820">
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -36,3 +40,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
